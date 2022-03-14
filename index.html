@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta name="google-site-verification" content="mSiMn3lbydIHOZRLZ9CHK1EijIvf1DWtoCI4jD5EnxM" />
+  <title>ANEMOI</title>
+  <meta content="Informacion sobre los Vientos en Argentina" name="description">
+  <meta content="viento, vientos de argentina, viento medio, direccion, velocidad, intensidad, mapa de vientos" name="keywords">
+
+  <!-- Favicons -->
+  <link href="static/img/icon.ico" rel="icon">
+  <link href="static/img/icon.png"  rel="apple-touch-icon" alt="Anemoi">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link rel= "canonical" href= "http://anemoi.com.ar">
+  <!-- Vendor CSS Files -->
+  <link rel="stylesheet" type="text/css" href="static/css/style.css">
+  <link href="static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="static/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="static/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="static/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="static/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="static/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- ======= Header ======= -->
+  <header id="header" class="fixed-top header-transparent">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <div class="logo">
+        <a href="/"><img src="static/img/icon.png", class="img-fluid"></a>
+        <h1 class="text-light"><a href="/"><span>ANEMOI</span></a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto" href="/">Inicio</a></li>
+          <li class="dropdown"><a href="#"><span>Servicios</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+            <li class="dropdown"><a href="#"><span>SMN</span> <i class="bi bi-chevron-right"></i></a>
+              <ul>
+                <li><a href="/mapas/SMN">Mapa climático de viento</a></li></a>
+                <li><a href="/mapa/estaciones">Información por estación</a></li>
+                  </ul>
+              <li class="dropdown"><a href="#"><span>POWERNASA</span> <i class="bi bi-chevron-right"></i></a>
+              <ul>
+                    <li><a href="/mapas/PN">Mapa climático de viento</a></li>
+                    <li><a href="/mapas/diferencia">Mapa de diferencias SMN y PN</a></li>
+                  </ul>
+                </li>
+              <li><a href="/mapa/interactivo">Mapa Interactivo</a></li>
+              </ul>
+            </li>
+          </li>
+        </li>
+          </li>
+          <li><a class="nav-link scrollto" href="/#about">Metadatos</a></li>
+          <li><a class="nav-link scrollto" href="/#team">Equipo</a></li>
+          <li><a class="nav-link scrollto" href="/#contact">Contacto</a></li>
+          <li><a class="nav-link scrollto" href="/#tesis">Tesis</a></li>
+        </ul>
+        <div class="logo">
+        <a href="http://www.agro.uba.ar" target="_blank"><img src="static/img/fauba2.png", class="img-fluid", alt="logo Fauba"></a>
+      </div>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div class="hero-container" data-aos="fade-up">
+      <h1>ANEMOI</h1>
+      <h2>Vientos de Argentina</h2>
+      <a href="/#cta" class="btn-get-started scrollto"><i class="bx bx-chevrons-down"></i></a>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="row no-gutters">
+          <div class="content col-xl-5 d-flex align-items-stretch" data-aos="fade-up">
+            <div class="content">
+              <h3>Fuentes de datos para nuestro trabajo</h3>
+              <p>
+                Trabajamos con datos observados en 46 estaciones meteorológicas del Servicio Meteorológico Nacional <a href="http://www3.smn.gob.ar/" target="_blank">(SMN)</a> de Argentina y del Instituto de Teconología Agropecuaria <a href="https://www.argentina.gob.ar/inta" target="_blank">(INTA)</a> y con datos estimados a partir de imagenes satelitales de <a href="https://power.larc.nasa.gov/" target="_blank">POWERNASA.</a><br>
+                A las estaciones meteorológicas que no cuentan con 24 datos diarios no se les realizó la marcha diaria del viento.<br>
+                En los mapas climátologicos y en las marchas anuales se usaron los datos disponibles de todas las estaciones en las horas 0,6,12,18 UTC.<br>
+                Para realizar las rosas de los vientos se usaron todos los datos disponibles.
+              </p>
+
+            </div>
+          </div>
+          <div class="col-xl-7 d-flex align-items-stretch">
+            <div class="icon-boxes d-flex flex-column justify-content-center">
+              <div class="row">
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
+                  <i class="bx bx-receipt"></i>
+                  <h4>Procesamiento de datos</h4>
+                  <p>Los datos fueron procesados con Sqlite3 y librerias de Python</p>
+                </div>
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
+                  <i class="bx bx-cube-alt"></i>
+                  <h4>Programación</h4>
+                  <p>Los gráficos interactivos fueron diseñados con librerias de Python y <a href="https://www.highcharts.com/" target="_blank">Heigcharts</a> de JavaScript</p>
+                </div>
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
+                  <i class="bx bx-images"></i>
+                  <h4>Elaboración de mapas</h4>
+                  <p>Los mapas fueron diseñados con el software QGIS y el mapa interactivo con la libreria Folium de Python</p>
+                </div>
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
+                  <i class="bx bx-shield"></i>
+                  <h4>Página Web</h4>
+                  <p>La página fue diseñada por medio del framework de Python Flask y la biblioteca multiplataforma Bootstrap</p>
+                </div>
+              </div>
+            </div><!-- End .content-->
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+    <!-- ======= Cta Section ======= -->
+    <section id="cta" class="cta">
+      <div class="container" data-aos="zoom-in">
+
+        <div class="text-center">
+          <h3>Sobre Nosotros</h3>
+          <p> Somos parte de La Cátedra de Climatología de la Facultad de Agronomía de la UBA </p>
+          <a class="cta-btn" href="https://www.instagram.com/clima_fauba" target="_blank">Visita nuestro Instagram</a>
+          <a class="cta-btn" href="https://www.agro.uba.ar/catedras/clima" target="_blank">Visita nuestra página</a>
+
+        </div>
+
+      </div>
+    </section><!-- End Cta Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-in" data-aos-delay="100">
+          <h2>Servicios</h2>
+          <p>Desde nuestras bases de datos se puede obtener gráficos de intensidad y dirección en las estaciones meteorologicas del Servicio Meteorológico Nacional! </p>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up">
+              <div class="icon"><i class="bi bi-wind"></i></div>
+              <h4 class="title"><a href="/marcha">Intensidad (km/h)</a></h4>
+              <p class="description">Gráficos de intensidad con datos horarios, diarios o mensuales.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+              <div class="icon"><i class="bi bi-arrows-fullscreen"></i></div>
+              <h4 class="title"><a href="/rosas">Dirección</a></h4>
+              <p class="description">Rosa de los vientos para localidades de todo el país</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+              <div class="icon"><i class="bx bx-tachometer"></i></div>
+              <h4 class="title"><a href="/weibull">Distribución de Weibull</a></h4>
+              <p class="description">Distribución de probabilidad para los datos de intensidad de viento</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
+              <div class="icon"><i class="bx bx-world"></i></div>
+              <h4 class="title"><a href="/powernasa">Datos satelitales</a></h4>
+              <p class="description"> Obtené gráficos de intensidad de viento solo con tus coordenadas</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+
+
+
+    <!-- ======= Team Section ======= --> 
+    <section id="team" class="team">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-in" data-aos-delay="100">
+          <h2>Equipo</h2>
+          <p>Quienes formamos parte de este proyecto.</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3">
+            <div class="member" data-aos="fade-up">
+              <div class="pic"><img src="static/img/team/tomy.png", class="img-fluid" alt="Tomas Lugaro"></div>
+              <div class="member-info">
+                <h4>Tomás Lúgaro</h4>
+                <span>Tesista</span>
+                <div class="social">
+                  <a href="https://www.linkedin.com/in/tomás-lúgaro" target="_blank"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="member" data-aos="fade-up" data-aos-delay="150">
+              <div class="pic"><img src="static/img/team/mele.png", class="img-fluid" alt="Maria Elena Fernandez Long"></div>
+              <div class="member-info">
+                <h4>Maria Elena Fernández Long</h4>
+                <span>Directora de tesis</span>
+                <div class="social">
+                  <a href="https://www.linkedin.com/in/mar%C3%ADa-elena-fern%C3%A1ndez-long-547b0510/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="member" data-aos="fade-up" data-aos-delay="300">
+              <div class="pic"><img src="static/img/team/mer.png", class="img-fluid" alt="Mercedes Peretti"></div>
+              <div class="member-info">
+                <h4>Mercedes Peretti</h4>
+                <span>Codirectora de tesis</span>
+                <div class="social">
+                  <a href="https://www.linkedin.com/in/mercedes-peretti-76a7b1a9/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="member" data-aos="fade-up" data-aos-delay="450">
+              <div class="pic"><img src="static/img/team/irene.png", class="img-fluid" alt="Irene Barnatran"></div>
+              <div class="member-info">
+                <h4>Irene Barnatrán</h4>
+                <span>Consultora</span>
+                <div class="social">
+                  <a href="https://www.linkedin.com/in/irene-barnatan-556b2b63/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Team Section -->
+    <!-- ======= Cta Section ======= -->
+    <section id="anemo" class="cta">
+      <div class="container" data-aos="zoom-in">
+
+        <div class="text-center">
+          <h3>¿Por qué Anemoi?</h3>
+          <p> En la mitología griega, los Anemoi eran dioses de los vientos, cada uno correspondía a un punto cardinal desde el cual venia su viento y estaban relacionados con las estaciones del año y los estados meteorológicos.</p>
+          <a class="cta-btn" href="https://es.wikipedia.org/wiki/Dioses_del_viento_griegos" target="_blank">Conocé más</a>
+        
+        </div>
+
+      </div>
+    </section>
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Contactate con nosotros</h2>
+          <p>Si tenés alguna duda envianos un mensaje!</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="info-box mb-4">
+              <i class="bx bx-map"></i>
+              <h3>Donde estamos</h3>
+              <p>Cátedra de Climatología, Facultad de Agronomía, Universidad de Buenos Aires, Buenos Aires, Argentina.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6">
+            <div class="info-box  mb-4">
+              <i class="bx bx-envelope"></i>
+              <h3>Email de contacto</h3>
+              <p>Anemoi.vientos.Arg@gmail.com</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-6 ">
+            <iframe class="mb-4 mb-lg-0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.455049145413!2d-58.48208120363253!3d-34.592653068715485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb750ac34aeff%3A0x752e9d5486bc9da7!2sParque%20Agronomia!5e0!3m2!1ses!2sar!4v1619637742859!5m2!1ses!2sar"frameborder="0" style="border:0; width: 100%; height: 384px;" allowfullscreen></iframe>
+          </div>
+
+          <div class="col-lg-6">
+            <form action="/"  method="POST">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name"  placeholder="Tu Nombre" required>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Tu Email" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Asunto" required>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="5" placeholder="Mensaje" required></textarea>
+              </div>
+              <div class="my-3">
+              </div>
+              <div class="text-center"><button type="submit" class="cta-btn-msj">Enviar Mensaje</button></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+ <!-- ======= Cta Section ======= -->
+    <section id="tesis" class="cta">
+      <div class="container" data-aos="zoom-in">
+
+        <div class="text-center">
+          <h3>Tesis de grado</h3>
+          <p> Si querés conocer mas sobre como se realizó este trabajo, o citarlo en tu propio trabajo, lee la tesis completa. </p>
+          <a class="cta-btn" href="#" target="_blank">Descarga la tesis</a>
+        
+        </div>
+
+      </div>
+    </section>
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>ANEMOI</span></strong>. 
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/squadfree-free-bootstrap-template-creative/ -->
+        Designed by <a href="https://bootstrapmade.com/"target="_blank">BootstrapMade</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="static/vendor/aos/aos.js"></script>
+  <script src="static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="static/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="static/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="static/vendor/php-email-form/validate.js"></script>
+  <script src="static/vendor/purecounter/purecounter.js"></script>
+  <script src="static/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="static/js/main.js"></script>
+
+</body>
+
+</html>
